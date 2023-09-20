@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vs 백앤드</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+
+    * {
+        font-family: 'Hahmlet', serif;
+    }
+
+    body {
+        background-color: rgb(4, 4, 22);
+    }
+
+    .main {
+        background-color: gray;
+        color: white;
+
+        background-image: url('https://www.zdnet.com/a/img/resize/0a6b0be2f543ddbf313fc83a706b807b77c3c202/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=900&width=1200');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .myskill {
+        width: 1200px;
+        margin: 20px auto 20px auto;
+    }
+
+    .attackbox {
+        width: 500px;
+        margin: 20px auto 20px auto;
+
+        padding: 12px;
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+
+    .attackbox>button {
+        width: 100%
+    }
+
+    .form-floating > input {
+        /* class명 > 태그명 */
+        background-color: transparent;
+    }
+
+    .form-floating > label {
+        color: white;
+    }
+
+    .input-group > label {
+        background-color: transparent;
+        color: white;
+    }
+</style>
+<script>
+
+</script>
+
+<body>
+    <div>
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-danger">BE WarZone</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">홈</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">툴 창고</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">휴게실</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">최전방</a></li>
+                    </ul>
+
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                            aria-label="Search">
+                    </form>
+
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-light me-2">Login</button>
+                        <button type="button" class="btn btn-danger">Sign-up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="main">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">vs JAVA</h1>
+                <p class="col-md-8 fs-4">코딩이 재밌어 입문한 그는 JAVA라는 녀석을 만나 고전을 면치 못하고 있는데...!</p>
+                <button type="button" class="btn btn-outline-light">공격하기</button>
+                <button type="button" class="btn btn-outline-light">능력치</button>
+            </div>
+        </div>
+    </div>
+    <div class="attackbox">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="스킬사진">
+            <label for="floatingInput">스킬사진</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="스킬이름">
+            <label for="floatingInput">스킬이름</label>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">공격력</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected></option>
+                <option value="⭐">⭐</option>
+                <option value="⭐⭐">⭐⭐</option>
+                <option value="⭐⭐⭐">⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+            </select>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="스킬설명">
+            <label for="floatingInput">스킬설명</label>
+        </div>
+        <button type="button" class="btn btn-danger">공격!</button>
+    </div>
+    <div class="myskill">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://f.hubspotusercontent10.net/hubfs/49114/Stock%20images/Thoughtful%20young%20programmer%20coding%20on%20computer%20in%20the%20evening%20at%20home-1.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">방콕 공부</h5>
+                        <p class="card-text">⭐⭐⭐</p>
+                        <p class="card-text">그 누구도 날 방해할 순 없다. 쉬는 시간은 잘 때 뿐!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://f.hubspotusercontent10.net/hubfs/49114/Stock%20images/Thoughtful%20young%20programmer%20coding%20on%20computer%20in%20the%20evening%20at%20home-1.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">방콕 공부</h5>
+                        <p class="card-text">⭐⭐⭐</p>
+                        <p class="card-text">그 누구도 날 방해할 순 없다. 쉬는 시간은 잘 때 뿐!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://f.hubspotusercontent10.net/hubfs/49114/Stock%20images/Thoughtful%20young%20programmer%20coding%20on%20computer%20in%20the%20evening%20at%20home-1.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">방콕 공부</h5>
+                        <p class="card-text">⭐⭐⭐</p>
+                        <p class="card-text">그 누구도 날 방해할 순 없다. 쉬는 시간은 잘 때 뿐!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://f.hubspotusercontent10.net/hubfs/49114/Stock%20images/Thoughtful%20young%20programmer%20coding%20on%20computer%20in%20the%20evening%20at%20home-1.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">방콕 공부</h5>
+                        <p class="card-text">⭐⭐⭐</p>
+                        <p class="card-text">그 누구도 날 방해할 순 없다. 쉬는 시간은 잘 때 뿐!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
